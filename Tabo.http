@@ -1,0 +1,6 @@
+@Tabo_HostAddress = http://localhost:5206
+
+GET {{Tabo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
