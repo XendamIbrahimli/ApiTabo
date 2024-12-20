@@ -1,6 +1,8 @@
 
 using Microsoft.EntityFrameworkCore;
 using Tabo.DAL;
+using Tabo.Services.Abstracts;
+using Tabo.Services.Implements;
 
 namespace Tabo
 {
@@ -15,6 +17,7 @@ namespace Tabo
             builder.Services.AddControllers();
             builder.Services.AddDbContext<TaboDbContext>(s => s.UseSqlServer
                 (builder.Configuration.GetConnectionString("local")));
+            builder.Services.AddScoped<ILanguageService,LanguageService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
