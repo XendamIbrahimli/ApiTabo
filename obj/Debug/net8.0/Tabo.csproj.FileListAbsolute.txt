@@ -286,3 +286,7 @@ C:\Users\user\Desktop\ApiTabo\obj\Debug\net8.0\refint\Tabo.dll
 C:\Users\user\Desktop\ApiTabo\obj\Debug\net8.0\Tabo.pdb
 C:\Users\user\Desktop\ApiTabo\obj\Debug\net8.0\Tabo.genruntimeconfig.cache
 C:\Users\user\Desktop\ApiTabo\obj\Debug\net8.0\ref\Tabo.dll
+C:\Users\ll novbe\Desktop\Tabo\Tabo\obj\Debug\net8.0\Tabo.sourcelink.json
+C:\Users\ll novbe\Desktop\Tabo\Tabo\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\ll novbe\Desktop\Tabo\Tabo\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\ll novbe\Desktop\Tabo\Tabo\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
