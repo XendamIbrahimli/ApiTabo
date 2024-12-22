@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\ApiTabo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:controllers\\languagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "LanguagesController.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Controllers\\LanguagesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LanguagesController.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Controllers\\LanguagesController.cs",
-              "RelativeToolTip": "Controllers\\LanguagesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABPAAAA",
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
+              "RelativeToolTip": "Entities\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T20:21:44.532Z",
+              "WhenOpened": "2024-12-22T08:00:22.93Z",
               "EditorCaption": ""
             }
           ]

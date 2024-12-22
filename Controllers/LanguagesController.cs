@@ -1,6 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Tabo.DTOs.Languages;
+using Tabo.Entities;
+using Tabo.Exceptions;
 using Tabo.Services.Abstracts;
 
 namespace Tabo.Controllers
@@ -24,8 +27,29 @@ namespace Tabo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(LanguageCreateDto dto)
         {
-            await _service.CreateAsync(dto);
-            return Ok();
+            try
+            {
+                await _service.CreateAsync(dto);
+                return Ok();
+
+            }catch(Exception ex)
+            {
+                if(ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        StatusCode = bEx.StatusCode,
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message
+                    });
+                }
+            }
         }
         [HttpPut]
         public async Task<IActionResult> Update(string code, LanguageUpdateDto dto)
@@ -36,8 +60,29 @@ namespace Tabo.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(string code)
         {
-            await _service.DeleteAsync(code);
-            return Ok();
+            try
+            {
+                await _service.DeleteAsync(code);
+                return Ok();
+
+            }catch(Exception ex)
+            {
+                if (ex is IBaseException bEx)
+                {
+                    return StatusCode(bEx.StatusCode, new
+                    {
+                        StatusCode = bEx.StatusCode,
+                        Message = bEx.ErrorMessage
+                    });
+                }
+                else
+                {
+                    return BadRequest(new
+                    {
+                        ex.Message
+                    });
+                }
+            }
         }
     }
 }

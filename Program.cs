@@ -15,13 +15,15 @@ namespace Tabo
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddAutoMapper(typeof(Program));
             builder.Services.AddControllers();
             builder.Services.AddDbContext<TaboDbContext>(s => s.UseSqlServer
                 (builder.Configuration.GetConnectionString("local")));
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<Program>();
             builder.Services.AddScoped<ILanguageService,LanguageService>();
+            builder.Services.AddScoped<IWordService, WordService>();
+            builder.Services.AddScoped<IBannedWordService, BannedWordService>();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
