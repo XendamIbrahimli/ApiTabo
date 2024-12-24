@@ -12,30 +12,20 @@ namespace Tabo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(WordCreateDto dto)
         {
-            try
-            {
-                await _service.CreateWord(dto);
-                return Ok();
 
-            } catch (Exception ex)
-            {
-                if (ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            return Ok(await _service.CreateWordAsync(dto));
         }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> CreateMany(List<WordCreateDto> dto)
+        {
+            foreach (var item in dto) 
+            {
+                await _service.CreateWordAsync(item);
+            }
+            return Ok();
+        }
+
         [HttpGet("{code}")]
         public async Task<IActionResult> GetWordsByLanguageCode(string? code)
         {

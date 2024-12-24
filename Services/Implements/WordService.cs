@@ -20,17 +20,20 @@ namespace Tabo.Services.Implements
             _context = context;
             _mapper=mapper;
         }
-        public async Task CreateWord(WordCreateDto dto)
+        public async Task<int> CreateWordAsync(WordCreateDto dto)
         {
-            if(await _context.Languages.AnyAsync(x=>x.Code==dto.LangCode))
+            Word word = new()
             {
-                await _context.Words.AddAsync(_mapper.Map<Word>(dto));
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                throw new LanguageDoesn_tExistException();
-            }
+                LanguageCode = dto.LangCode,
+                BannedWords = dto.BannedWords.Select(x => new BannedWord
+                {
+                    Text = x
+                }).ToList(),
+                Text= dto.Text
+            };
+            await _context.Words.AddAsync(word);
+            await _context.SaveChangesAsync();
+            return word.Id;
         }
 
         public async Task<IEnumerable<WordGetDto>> GetWordsByLanguageCode(string code)
@@ -64,7 +67,6 @@ namespace Tabo.Services.Implements
                 _context.Words.Remove(data);
                 await _context.SaveChangesAsync();
             }
-            
         }
     }
 }

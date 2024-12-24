@@ -3,6 +3,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Tabo.DAL;
+using Tabo.Registrations;
 using Tabo.Services.Abstracts;
 using Tabo.Services.Implements;
 
@@ -21,9 +22,7 @@ namespace Tabo
                 (builder.Configuration.GetConnectionString("local")));
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<Program>();
-            builder.Services.AddScoped<ILanguageService,LanguageService>();
-            builder.Services.AddScoped<IWordService, WordService>();
-            builder.Services.AddScoped<IBannedWordService, BannedWordService>();
+            builder.Services.AddServices();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

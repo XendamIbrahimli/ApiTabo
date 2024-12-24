@@ -294,3 +294,4 @@ C:\Users\user\Desktop\ApiTabo\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\user\Desktop\ApiTabo\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\user\Desktop\ApiTabo\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\user\Desktop\ApiTabo\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ll novbe\Desktop\Tabo\Tabo\bin\Debug\net8.0\AutoMapper.dll
