@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\ApiTabo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\dtos\\games\\gamestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:dtos\\games\\gamestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\services\\abstracts\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\abstracts\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
-              "RelativeDocumentMoniker": "Entities\\Game.cs",
-              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
-              "RelativeToolTip": "Entities\\Game.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "DocumentIndex": 1,
+              "Title": "GameService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Implements\\GameService.cs",
+              "RelativeDocumentMoniker": "Services\\Implements\\GameService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Implements\\GameService.cs",
+              "RelativeToolTip": "Services\\Implements\\GameService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T08:00:22.93Z",
+              "WhenOpened": "2024-12-25T07:54:45.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IGameService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Abstracts\\IGameService.cs",
+              "RelativeDocumentMoniker": "Services\\Abstracts\\IGameService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Abstracts\\IGameService.cs",
+              "RelativeToolTip": "Services\\Abstracts\\IGameService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:54:30.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\DTOs\\Games\\GameStatusDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Games\\GameStatusDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\DTOs\\Games\\GameStatusDto.cs",
+              "RelativeToolTip": "DTOs\\Games\\GameStatusDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:49:54.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Controllers\\GameController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:43:48.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T07:43:16.52Z",
               "EditorCaption": ""
             }
           ]

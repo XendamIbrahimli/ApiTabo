@@ -2,8 +2,8 @@
 {
     public class Game
     {
-        public int Id { get; set; }
-        public string BannedWordCount { get; set; }
+        public Guid Id { get; set; }
+        public int BannedWordCount { get; set; }
         public int FailCount { get; set; }
         public int SkipCount { get; set; }
         public int Time { get; set; }

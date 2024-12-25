@@ -1,11 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace Tabo.Migrations
 {
     /// <inheritdoc />
-    public partial class CreatedOtherTables : Migration
+    public partial class CreateOtherTables : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,9 +15,8 @@ namespace Tabo.Migrations
                 name: "Games",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    BannedWordCount = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    BannedWordCount = table.Column<int>(type: "int", nullable: false),
                     FailCount = table.Column<int>(type: "int", nullable: false),
                     SkipCount = table.Column<int>(type: "int", nullable: false),
                     Time = table.Column<int>(type: "int", nullable: false),
@@ -33,7 +33,7 @@ namespace Tabo.Migrations
                         column: x => x.LanguageCode,
                         principalTable: "Languages",
                         principalColumn: "Code",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -53,7 +53,7 @@ namespace Tabo.Migrations
                         column: x => x.LanguageCode,
                         principalTable: "Languages",
                         principalColumn: "Code",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -73,7 +73,7 @@ namespace Tabo.Migrations
                         column: x => x.WordId,
                         principalTable: "Words",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

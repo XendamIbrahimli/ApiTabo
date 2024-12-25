@@ -12,8 +12,8 @@ using Tabo.DAL;
 namespace Tabo.Migrations
 {
     [DbContext(typeof(TaboDbContext))]
-    [Migration("20241221182357_UpdateDeleteBehavior")]
-    partial class UpdateDeleteBehavior
+    [Migration("20241225065947_CreateOtherTables")]
+    partial class CreateOtherTables
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,15 +49,12 @@ namespace Tabo.Migrations
 
             modelBuilder.Entity("Tabo.Entities.Game", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("BannedWordCount")
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("BannedWordCount")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("FailCount")
                         .HasColumnType("int");
