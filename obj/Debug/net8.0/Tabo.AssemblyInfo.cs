@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tabo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e8a2e386a32359ac36a3e9c9dc774ebe459c4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af78d6ec5573a486c9eb06beb95d6f9d035fc918")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tabo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tabo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -85,6 +85,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Tabo.Controllers.GameController",
+    "Method": "Set",
+    "RelativePath": "api/Game",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "value",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tabo.Controllers.GameController",
+    "Method": "CreateAsync",
+    "RelativePath": "api/Game/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Tabo.DTOs.Games.GameCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tabo.Controllers.GameController",
+    "Method": "Get",
+    "RelativePath": "api/Game/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Tabo.Controllers.LanguagesController",
     "Method": "Get",
     "RelativePath": "api/Languages",
