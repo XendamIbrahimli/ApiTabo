@@ -20,8 +20,6 @@ namespace Tabo.Validators.WordCreateDtoValidators
                 .MinimumLength(3);
             RuleFor(x => x.BannedWords)
                 .Must(x => x.Count == 6);
-
-
         }
     }
 }

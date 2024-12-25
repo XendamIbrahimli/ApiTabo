@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\dal\\tabodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:dal\\tabodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\services\\abstracts\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\abstracts\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,19 +34,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "TaboDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\DAL\\TaboDbContext.cs",
+              "RelativeDocumentMoniker": "DAL\\TaboDbContext.cs",
+              "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\DAL\\TaboDbContext.cs",
+              "RelativeToolTip": "DAL\\TaboDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T13:42:56.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Services\\Implements\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\Implements\\GameService.cs",
               "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Services\\Implements\\GameService.cs",
               "RelativeToolTip": "Services\\Implements\\GameService.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB0AAAAAAAAA",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T07:54:45.192Z"
+              "WhenOpened": "2024-12-25T07:54:45.192Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -52,9 +70,10 @@
               "RelativeDocumentMoniker": "Services\\Abstracts\\IGameService.cs",
               "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Services\\Abstracts\\IGameService.cs",
               "RelativeToolTip": "Services\\Abstracts\\IGameService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T07:54:30.006Z"
+              "WhenOpened": "2024-12-25T07:54:30.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -64,9 +83,10 @@
               "RelativeDocumentMoniker": "DTOs\\Games\\GameStatusDto.cs",
               "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\DTOs\\Games\\GameStatusDto.cs",
               "RelativeToolTip": "DTOs\\Games\\GameStatusDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAuAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T07:49:54.524Z"
+              "WhenOpened": "2024-12-25T07:49:54.524Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -76,19 +96,20 @@
               "RelativeDocumentMoniker": "Controllers\\GameController.cs",
               "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Controllers\\GameController.cs",
               "RelativeToolTip": "Controllers\\GameController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBUAAAAfAAAA",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-25T07:43:48.198Z"
+              "WhenOpened": "2024-12-25T07:43:48.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-25T07:43:16.52Z",
               "EditorCaption": ""

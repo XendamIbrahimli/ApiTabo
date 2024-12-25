@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\registrations\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:registrations\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\ll novbe\\desktop\\tabo\\tabo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Registrations\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "Registrations\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Registrations\\ServiceRegistration.cs",
+              "RelativeToolTip": "Registrations\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T12:15:39.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Services\\Implements\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\Implements\\GameService.cs",
@@ -46,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IGameService.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Services\\Abstracts\\IGameService.cs",
               "RelativeDocumentMoniker": "Services\\Abstracts\\IGameService.cs",
@@ -58,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameStatusDto.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\DTOs\\Games\\GameStatusDto.cs",
               "RelativeDocumentMoniker": "DTOs\\Games\\GameStatusDto.cs",
@@ -70,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "Controllers\\GameController.cs",
@@ -82,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ll novbe\\Desktop\\Tabo\\Tabo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
