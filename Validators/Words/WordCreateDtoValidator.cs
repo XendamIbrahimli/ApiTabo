@@ -14,6 +14,13 @@ namespace Tabo.Validators.WordCreateDtoValidators
                     .WithMessage("Word cann't be null")
                 .MaximumLength(24)
                 .MinimumLength(3);
+            RuleForEach(x => x.BannedWords)
+                .NotNull()
+                .NotEmpty()
+                .MinimumLength(3);
+            RuleFor(x => x.BannedWords)
+                .Must(x => x.Count == 6);
+
 
         }
     }

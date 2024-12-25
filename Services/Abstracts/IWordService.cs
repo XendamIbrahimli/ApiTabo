@@ -6,7 +6,7 @@ namespace Tabo.Services.Abstracts
 {
     public interface IWordService
     {
-        Task CreateWord(WordCreateDto dto);
+        Task<int> CreateWordAsync(WordCreateDto dto);
         Task UpdateWord(WordUpdateDto dto, int id);
         Task<IEnumerable<WordGetDto>> GetWordsByLanguageCode(string code);
         Task<WordGetDto> GetWordById(int id);
