@@ -16,17 +16,18 @@ namespace Tabo.Controllers
             return Ok(await _service.CreateAsync(dto));
         }
 
-        [HttpGet("[action]")]
-        public async Task<IActionResult> Get(string key)
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Start(Guid id)
         {
-            return Ok(_cache.Get(key));
+
+            return Ok(await _service.Start(id));
+        }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Skip(Guid id)
+        {
+
+            return Ok(await _service.Skip(id));
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Set(string key, string value)
-        {
-            _cache.Set<string>(key, value,DateTimeOffset.Now.AddSeconds(20));
-            return Ok();
-        }
     }
 }

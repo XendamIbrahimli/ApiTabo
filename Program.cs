@@ -1,8 +1,11 @@
 
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Tabo.DAL;
+using Tabo.Exceptions;
 using Tabo.Registrations;
 using Tabo.Services.Abstracts;
 using Tabo.Services.Implements;
@@ -36,6 +39,8 @@ namespace Tabo
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseTaboExceptionHandler();
 
             app.UseHttpsRedirection();
 

@@ -46,30 +46,8 @@ namespace Tabo.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {
-            try
-            {
-                await _service.DeleteWord(id);
-                return Ok();
-
-            }catch (Exception ex)
-            {
-                if(ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            await _service.DeleteWord(id);
+            return Ok();
         }
-
     }
 }

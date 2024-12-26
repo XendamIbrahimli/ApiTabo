@@ -13,29 +13,8 @@ namespace Tabo.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(BannedWordCreateDto dto)
         {
-            try
-            {
-                await _service.Create(dto);
-                return Ok();
-
-            }catch (Exception ex)
-            {
-                if(ex is IBaseException bEx)
-                {
-                    return StatusCode(bEx.StatusCode, new
-                    {
-                        StatusCode = bEx.StatusCode,
-                        Message = bEx.ErrorMessage
-                    });
-                }
-                else
-                {
-                    return BadRequest(new
-                    {
-                        ex.Message
-                    });
-                }
-            }
+            await _service.Create(dto);
+            return Ok();
         }
 
 
