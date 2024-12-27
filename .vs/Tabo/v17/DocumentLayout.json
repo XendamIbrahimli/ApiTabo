@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\ApiTabo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\extensions\\iqueryableextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:extensions\\iqueryableextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:services\\implements\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\extensions\\iqueryableextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:extensions\\iqueryableextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\dtos\\games\\gamestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:dtos\\games\\gamestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|c:\\users\\user\\desktop\\apitabo\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE2AB146-3B2B-4306-81F6-3BB508DAE93F}|Tabo.csproj|solutionrelative:entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +26,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "IQueryableExtension.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Extensions\\IQueryableExtension.cs",
               "RelativeDocumentMoniker": "Extensions\\IQueryableExtension.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Extensions\\IQueryableExtension.cs",
               "RelativeToolTip": "Extensions\\IQueryableExtension.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA1AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T09:09:30.208Z",
+              "WhenOpened": "2024-12-27T08:21:22.59Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "GameStatusDto.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\DTOs\\Games\\GameStatusDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\Games\\GameStatusDto.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\DTOs\\Games\\GameStatusDto.cs",
+              "RelativeToolTip": "DTOs\\Games\\GameStatusDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T05:34:10.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Entities\\Game.cs",
+              "RelativeToolTip": "Entities\\Game.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-27T05:33:13.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Implements\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\Implements\\GameService.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\ApiTabo\\Services\\Implements\\GameService.cs",
               "RelativeToolTip": "Services\\Implements\\GameService.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAQwEkAAAAYAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAswE0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T07:34:19.846Z",
+              "WhenOpened": "2024-12-26T18:16:26.547Z",
               "EditorCaption": ""
             }
           ]

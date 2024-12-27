@@ -28,6 +28,23 @@ namespace Tabo.Controllers
 
             return Ok(await _service.Skip(id));
         }
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Fail(Guid id)
+        {
+            return Ok(await _service.Fail(id));
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Success(Guid id)
+        {
+            return Ok(await _service.Success(id));
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> End(Guid id)
+        {
+            return Ok(await _service.End(id));
+        }
 
     }
 }

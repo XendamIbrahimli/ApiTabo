@@ -6,6 +6,7 @@ using Tabo.DAL;
 using Tabo.DTOs.Games;
 using Tabo.DTOs.Words;
 using Tabo.Entities;
+using Tabo.Exceptions.Games;
 using Tabo.Extensions;
 using Tabo.Services.Abstracts;
 
@@ -32,14 +33,32 @@ namespace Tabo.Services.Implements
             return data.Id;
         }
 
-        public Task End(Guid id)
+        public async Task<int> End(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            var game=await _context.Games.FindAsync(id);
+            game.Score=status.Score;
+            game.WrongAnswer=status.failCount;
+            game.SuccessAnswer = status.Success;
+            await _context.SaveChangesAsync();
+            _cache.Remove(status);
+            return status.Score;
+            
         }
 
-        public Task Fail(Guid id)
+        public async Task<WordForGameDto> Fail(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            status.failCount++;
+            if (status.failCount == status.Fail)
+            {
+                status.Success--;
+                status.failCount = 0;
+            }
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+
+            var currentWord=status.Words.Pop();
+            return currentWord;
         }
 
         public async Task<WordForGameDto> Skip(Guid id)
@@ -58,10 +77,11 @@ namespace Tabo.Services.Implements
         public async Task<WordForGameDto> Start(Guid id)
         {
             var game= await _context.Games.FindAsync(id);
-            if(game ==null || game.Score != null)
-            {
-                throw new Exception();
-            }
+            if(game ==null)
+                throw new GameCannotFoundException();
+            else if (game.Score!=null) 
+                throw new GameAlreadyStartedException();
+
             IQueryable<Word> query =_context.Words.Where(x=>x.LanguageCode==game.LanguageCode);
             var words =await query.Select(x=>new WordForGameDto
             {
@@ -79,21 +99,34 @@ namespace Tabo.Services.Implements
             WordForGameDto currentWord=wordsStack.Pop();
             GameStatusDto status= new GameStatusDto()
             {
-                Fail=0,
+                Fail=game.FailCount,
                 Success=0,
                 Skip=0,
+                Score=0,
+                failCount=0,
                 Words=wordsStack,
                 MaxSkipCount=game.SkipCount,
                 UsedWordIds= randomWords.Select(x=>x.Id)
             };
 
             _cache.Set(id, status, TimeSpan.FromSeconds(300));
+
+            game.Score = status.Score;
+            game.WrongAnswer = status.failCount;
+            game.SuccessAnswer = status.Success;
+            await _context.SaveChangesAsync();
             return currentWord; 
         }
 
-        public Task Success(Guid id)
+        public async Task<WordForGameDto> Success(Guid id)
         {
-            throw new NotImplementedException();
+            var status = _getCurrentGame(id);
+            status.Success++;
+            _cache.Set(id, status, TimeSpan.FromSeconds(300));
+
+            var currentWord=status.Words.Pop();
+            return currentWord;
+
         }
 
         GameStatusDto _getCurrentGame(Guid id)
